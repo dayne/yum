@@ -1,0 +1,9 @@
+# rpm --import http://dag.wieers.com/packages/RPM-GPG-KEY.dag.txt
+[dag]
+name=Dag APT Repository
+baseurl=http://modzer0.cs.uaf.edu/public/fedora/dag/$releasever/en/$basearch/dag
+#http://dag.freshrpms.net/fedora/$releasever/en/$basearch/dag/
+#http://dag.atrpms.net/fedora/$releasever/en/$basearch/dag/
+#http://ftp.heanet.ie/pub/freshrpms/pub/dag/fedora/$releasever/en/$basearch/dag/
+enabled=1
+#gpgcheck=1

@@ -2,6 +2,5 @@
 [Livna]
 name=Livna Stable
 baseurl=http://rpm.livna.org/fedora/$releasever/$basearch/RPMS.stable/
-enabled=1
+enabled=0
 gpgcheck=1
-
