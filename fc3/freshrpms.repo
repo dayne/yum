@@ -12,11 +12,11 @@ gpgcheck=0
 #enabled=1
 #gpgcheck=0
 #
-##[extras]
-##name=Fedora Linux $releasever - $basearch - extras
-##baseurl=http://ayo.freshrpms.net/fedora/linux/$releasever/$basearch/extras
-#enabled=0
-#gpgcheck=0
+[extras]
+name=Fedora Linux $releasever - $basearch - extras
+baseurl=http://ayo.freshrpms.net/fedora/linux/$releasever/$basearch/extras
+enabled=1
+gpgcheck=0
 #
 ##[alternatives]
 ##name=Fedora Linux $releasever - $basearch - alternatives
