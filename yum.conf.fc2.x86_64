@@ -1,0 +1,53 @@
+[main]
+cachedir=/var/cache/yum
+debuglevel=2
+logfile=/var/log/yum.log
+pkgpolicy=newest
+distroverpkg=fedora-release
+tolerant=1
+exactarch=1
+retries=20
+
+[base]
+name=Fedora Core $releasever - $basearch - Base
+baseurl=http://modzer0.cs.uaf.edu/public/fedora/core/$releasever/$basearch/os/
+#baseurl=http://download.fedora.redhat.com/pub/fedora/linux/core/$releasever/$basearch/os/
+ 
+[updates-released]
+name=Fedora Core $releasever - $basearch - Released Updates
+baseurl=http://modzer0.cs.uaf.edu/public/fedora/core/updates/$releasever/$basearch/
+#baseurl=http://download.fedora.redhat.com/pub/fedora/linux/core/updates/$releasever/$basearch/
+
+#[updates-testing]
+#name=Fedora Core $releasever - $basearch - Unreleased Updates
+#baseurl=http://download.fedora.redhat.com/pub/fedora/linux/core/updates/testing/$releasever/$basearch/
+ 
+[core]
+name=Fedora Linux $releasever - $basearch - core
+baseurl=http://ayo.freshrpms.net/fedora/linux/$releasever/$basearch/core
+ 
+#[extras]
+#name=Fedora Linux $releasever - $basearch - extras
+#baseurl=http://ayo.freshrpms.net/fedora/linux/$releasever/$basearch/extras
+ 
+#[alternatives]
+#name=Fedora Linux $releasever - $basearch - alternatives
+#baseurl=http://ayo.freshrpms.net/fedora/linux/$releasever/$basearch/alternatives
+
+[updates]
+name=Fedora Linux $releasever - $basearch - updates
+baseurl=http://ayo.freshrpms.net/fedora/linux/$releasever/$basearch/updates
+ 
+[freshrpms]
+name=Fedora Linux $releasever - $basearch - freshrpms
+baseurl=http://ayo.freshrpms.net/fedora/linux/$releasever/$basearch/freshrpms
+ 
+#[livna-stable]
+#name=Livna.org Fedora Compatible Packages (stable)
+##baseurl= http://rpm.livna.org/fedora/$releasever/$basearch/yum/stable
+#baseurl= http://modzer0.cs.uaf.edu/public/fedora/livna/$releasever/$basearch/yum/stable
+#gpgcheck=1
+
+[at-stable]
+name=ATrpms for Fedora Core $releasever stable
+baseurl=http://apt.physik.fu-berlin.de/fedora/$releasever/en/$basearch/at-stable
