@@ -1,0 +1,50 @@
+# rpm --import http://beta.centos.org/centos/4.0beta/os/x86_64/RPM-GPG-KEY
+# rpm --import http://beta.centos.org/centos/4.0beta/os/x86_64/RPM-GPG-KEY-centos4.0beta
+
+[base]
+name=CentOS-$releasever - Base
+baseurl=http://beta.centos.org/centos/$releasever/os/$basearch/
+#baseurl=http://sunsite.utk.edu/ftp/pub/linux/caos/centos/$releasever/os/$basearch/
+#        http://mirrors.ircam.fr/pub/cAos/centos/$releasever/os/$basearch/
+#        http://ftp.gui.uva.es/sites/caosity.org/centos/$releasever/os/$basearch/
+#        http://caos.bladeware.com/caosity/centos/$releasever/os/$basearch/
+
+[updates]
+name=CentOS-$releasever - Updates
+baseurl=http://beta.centos.org/centos/$releasever/updates/$basearch/
+#baseurl=http://sunsite.utk.edu/ftp/pub/linux/caos/centos/$releasever/updates/$basearch/
+#        http://mirrors.ircam.fr/pub/cAos/centos/$releasever/updates/$basearch/
+#        http://ftp.gui.uva.es/sites/caosity.org/centos/$releasever/updates/$basearch/
+#        http://caos.bladeware.com/caosity/centos/$releasever/updates/$basearch/
+
+[extras]
+name=CentOS-$releasever - extras
+baseurl=http://beta.centos.org/centos/$releasever/extras/$basearch/
+#baseurl=http://sunsite.utk.edu/ftp/pub/linux/caos/centos/$releasever/extras/$basearch/
+#        http://mirrors.ircam.fr/pub/cAos/centos/$releasever/extras/$basearch/
+#        http://ftp.gui.uva.es/sites/caosity.org/centos/$releasever/extras/$basearch/
+#        http://caos.bladeware.com/caosity/centos/$releasever/extras/$basearch/
+
+#[centosplus]
+#name=CentOS-$releasever - centosplus
+#baseurl=http://beta.centos.org/centos/$releasever/centosplus/$basearch/
+#baseurl=http://sunsite.utk.edu/ftp/pub/linux/caos/centos/$releasever/centosplus/$basearch/
+#        http://mirrors.ircam.fr/pub/cAos/centos/$releasever/centosplus/$basearch/
+#        http://ftp.gui.uva.es/sites/caosity.org/centos/$releasever/centosplus/$basearch/
+#        http://caos.bladeware.com/caosity/centos/$releasever/updates/$basearch/
+
+[contrib]
+name=CentOS-$releasever - contrib
+baseurl=http://beta.centos.org/centos/$releasever/contrib/$basearch/
+#baseurl=http://sunsite.utk.edu/ftp/pub/linux/caos/centos/$releasever/contrib/$basearch/
+#        http://mirrors.ircam.fr/pub/cAos/centos/$releasever/contrib/$basearch/
+#        http://ftp.gui.uva.es/sites/caosity.org/centos/$releasever/contrib/$basearch/
+#        http://caos.bladeware.com/caosity/centos/$releasever/contrib/$basearch/
+
+[addons]
+name=CentOS-$releasever - addons 
+baseurl=http://beta.centos.org/centos/$releasever/addons/$basearch/
+#baseurl=http://sunsite.utk.edu/ftp/pub/linux/caos/centos/$releasever/addons/$basearch/
+#        http://mirrors.ircam.fr/pub/cAos/centos/$releasever/addons/$basearch/
+#        http://ftp.gui.uva.es/sites/caosity.org/centos/$releasever/addons/$basearch/
+#        http://caos.bladeware.com/caosity/centos/$releasever/addons/$basearch/

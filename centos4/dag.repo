@@ -1,0 +1,5 @@
+# rpm --import http://dag.wieers.com/packages/RPM-GPG-KEY.dag.txt
+[dag] 
+name=Dag RPM Repository for Red Hat Enterprise Linux 
+baseurl=http://apt.sw.be/redhat/el4/en/$basearch/dag
+gpgcheck=1
