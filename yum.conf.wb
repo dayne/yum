@@ -1,0 +1,34 @@
+[main]
+cachedir=/var/cache/yum
+debuglevel=2
+logfile=/var/log/yum.log
+pkgpolicy=newest
+distroverpkg=whitebox-release
+tolerant=1
+exactarch=1
+retries=20
+failovermethod=roundrobin
+gpgcheck=1
+
+[base]
+name=White Box Enterprise Linux $releasever - $basearch - Base
+baseurl=http://modzer0.cs.uaf.edu/public/whitebox/$releasever/en/os/$basearch/
+	ftp://mirror.physics.ncsu.edu/pub/whitebox/$releasever/en/os/$basearch/
+	ftp://ftp.esat.net/mirrors/whiteboxlinux.org/$releasever/en/os/$basearch/
+	ftp://ftp.kspei.com/mirrors/whiteboxlinux.org/whitebox/$releasever/en/os/$basearch/
+	ftp://ftp.jach.hawaii.edu/pub/linux/whitebox/$releasever/en/os/$basearch/
+	ftp://gd.tuwien.ac.at/opsys/linux/whiteboxlinux/$releasever/en/os/$basearch/
+	ftp://ftp.opensourcemirrors.org/linux/whitebox/$releasever/en/os/$basearch/
+	http://whitebox.phantomhosting.com/$releasever/en/os/$basearch/
+
+[updates-released]
+name=White Box Enterprise Linux $releasever - $basearch - Released Updates
+baseurl=http://modzer0.cs.uaf.edu/public/whitebox/$releasever/en/updates/
+	http://whitebox.phantomhosting.com/$releasever/en/updates/
+	ftp://ftp.opensourcemirrors.org/linux/whitebox/$releasever/en/updates/
+	ftp://gd.tuwien.ac.at/opsys/linux/whiteboxlinux/$releasever/en/updates/
+	ftp://ftp.jach.hawaii.edu/pub/linux/whitebox/$releasever/en/updates/
+	ftp://ftp.kspei.com/mirrors/whiteboxlinux.org/whitebox/$releasever/en/updates/
+	ftp://ftp.esat.net/mirrors/whiteboxlinux.org/$releasever/en/updates/
+	ftp://mirror.physics.ncsu.edu/pub/whitebox/$releasever/en/updates/
+
