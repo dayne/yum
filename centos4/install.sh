@@ -41,15 +41,14 @@ done
 echo 0
 sleep 1
 
-echo "Installing fedora-updates GPG key"
-rpm --import http://download.fedora.redhat.com/pub/fedora/linux/core/3/i386/os/RPM-GPG-KEY-fedora
-echo "Installing dag.repo GPG key"
-rpm --import http://dag.wieers.com/packages/RPM-GPG-KEY.dag.txt
-echo "Installing freshrpms.repo GPG key"
-rpm --import http://freshrpms.net/packages/RPM-GPG-KEY.txt
-echo "Installing livna.repo GPG key"
-rpm --import http://rpm.livna.org/RPM-LIVNA-GPG-KEY
-
+for KEYFILE in *.repo.key; do
+	echo "Inserting key from $KEYFILE"
+	for KEYURL in `cat $KEYFILE`; do
+		echo "rpm --import $KEYURL"
+		rpm --import $KEYURL
+		sleep 1
+	done
+done
 
 echo 
 echo "you can stay in sync w/ bishop's yum.repos.d by going to"
