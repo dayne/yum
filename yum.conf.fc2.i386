@@ -38,10 +38,10 @@ baseurl=http://ayo.freshrpms.net/fedora/linux/$releasever/$basearch/core
 #name=Fedora Linux $releasever - $basearch - alternatives
 #baseurl=http://ayo.freshrpms.net/fedora/linux/$releasever/$basearch/alternatives
 
-[updates]
+[ayo-updates]
 name=Fedora Linux $releasever - $basearch - updates
 baseurl=http://ayo.freshrpms.net/fedora/linux/$releasever/$basearch/updates
-gpgcheck=1
+#gpgcheck=1
  
 [freshrpms]
 name=Fedora Linux $releasever - $basearch - freshrpms
@@ -54,12 +54,12 @@ name=Livna.org Fedora Compatible Packages (stable)
 baseurl= http://modzer0.cs.uaf.edu/public/fedora/livna/$releasever/$basearch/yum/stable
 gpgcheck=1
 
-[at-stable]
-name=ATrpms for Fedora Core $releasever stable
-baseurl=http://apt.physik.fu-berlin.de/fedora/$releasever/en/$basearch/at-stable
-gpgcheck=1
+#[at-stable]
+#name=ATrpms for Fedora Core $releasever stable
+#baseurl=http://apt.physik.fu-berlin.de/fedora/$releasever/en/$basearch/at-stable
+#gpgcheck=1
 
 [newrpms.sunsite.dk]
 name=Fedora Core 2 NewRPMS.sunsite.dk
 baseurl=http://newrpms.sunsite.dk/apt/redhat/en/i386/fc2
-gpgcheck=1
+#gpgcheck=1
