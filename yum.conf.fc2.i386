@@ -63,3 +63,7 @@ gpgcheck=1
 name=Fedora Core 2 NewRPMS.sunsite.dk
 baseurl=http://newrpms.sunsite.dk/apt/redhat/en/i386/fc2
 #gpgcheck=1
+
+[dag] 
+name=Dag RPM Repository for Fedora Core 
+baseurl=http://apt.sw.be/fedora/$releasever/en/$basearch/dag
