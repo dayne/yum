@@ -1,0 +1,7 @@
+[base]
+name=Fedora Core $releasever - $basearch - Base
+#baseurl=http://download.fedora.redhat.com/pub/fedora/linux/core/$releasever/$basearch/os/
+baseurl=http://modzer0.cs.uaf.edu/public/fedora/core/$releasever/$basearch/os/
+#mirrorlist=http://fedora.redhat.com/download/mirrors/fedora-core-$releasever
+enabled=1
+gpgcheck=1

@@ -1,0 +1,5 @@
+# rpm --import http://rpm.livna.org/RPM-LIVNA-GPG-KEY
+[livna-stable]
+name=Livna.org Fedora Compatible Packages (stable)
+baseurl= http://rpm.livna.org/fedora/$releasever/$basearch/yum/stable
+gpgcheck=1
