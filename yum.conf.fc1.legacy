@@ -1,0 +1,33 @@
+[main]
+cachedir=/var/cache/yum
+debuglevel=2
+logfile=/var/log/yum.log
+pkgpolicy=newest
+distroverpkg=fedora-release
+tolerant=1
+exactarch=1
+
+# Fedora Legacy yum.conf for Fedora Core 1 i386
+# you will need to import their GPG key:
+# rpm --import http://www.fedoralegacy.org/FEDORA-LEGACY-GPG-KEY
+
+[base]
+name=Fedora Core $releasever - $basearch - Base
+#baseurl=http://fedora.redhat.com/releases/fedora-core-$releasever
+baseurl=http://modzer0.cs.uaf.edu/public/fedora/core/$releasever/$basearch/os
+
+# updates-released depricated in favor of legacy's updates
+#[updates-released]
+#name=Fedora Core $releasever - $basearch - Released Updates
+##baseurl=http://fedora.redhat.com/updates/released/fedora-core-$releasever
+#baseurl=http://modzer0.cs.uaf.edu/public/fedora/core/updates/$releasever/$basearch/
+
+[updates]
+name=Fedora Core $releasever updates
+#baseurl=http://download.fedoralegacy.org/fedora/$releasever/updates/$basearch
+baseurl=http://modzer0.cs.uaf.edu/public/legacy/fedora/$releasever/updates/$basearch
+
+[legacy-utils]
+name=Fedora Legacy utilities for Fedora Core $releasever
+#baseurl=http://download.fedoralegacy.org/fedora/$releasever/legacy-utils/$basearch
+baseurl=http://modzer0.cs.uaf.edu/public/legacy/fedora/$releasever/legacy-utils/$basearch
