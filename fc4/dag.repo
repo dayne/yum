@@ -5,6 +5,6 @@ baseurl=http://modzer0.cs.uaf.edu/public/dag/$releasever/en/$basearch/dag
 #http://dag.freshrpms.net/fedora/$releasever/en/$basearch/dag/
 #http://dag.atrpms.net/fedora/$releasever/en/$basearch/dag/
 #http://ftp.heanet.ie/pub/freshrpms/pub/dag/fedora/$releasever/en/$basearch/dag/
-enabled=0
+enabled=1
 gpgcheck=1
 gpgkey=/etc/yum.repos.d/dag.repo.key
