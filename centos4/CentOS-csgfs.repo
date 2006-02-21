@@ -1,0 +1,5 @@
+[csgfs]
+name=CentOS-4 - CSGFS 
+baseurl=http://mirror.centos.org/centos/$releasever/csgfs/$basearch/
+gpgcheck=1
+enabled=1
