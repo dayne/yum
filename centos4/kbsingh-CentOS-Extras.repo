@@ -2,5 +2,5 @@
 name=CentOS.Karan.Org-EL$releasever - Stable
 gpgcheck=1
 gpgkey=http://centos.karan.org/RPM-GPG-KEY-karan.org.txt
-enabled=0
+enabled=1
 baseurl=http://centos.karan.org/el$releasever/extras/stable/$basearch/RPMS/

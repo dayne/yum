@@ -41,9 +41,9 @@ enabled=1
 #contribs - packages by Centos Users
 [contribs]
 name=CentOS-$releasever - Contribs
-#baseurl=http://mirror.centos.org/centos/$releasever/contribs/$basearch/
-#baseurl=http://modzer0.cs.uaf.edu/public/centos/$releasever/contribs/$basearch/
-baseurl=http://dds.gina.alaska.edu/public/mirrors/centos/$releasever/contribs/$basearch/
+#baseurl=http://mirror.centos.org/centos/$releasever/contrib/$basearch/
+#baseurl=http://modzer0.cs.uaf.edu/public/centos/$releasever/contrib/$basearch/
+baseurl=http://dds.gina.alaska.edu/public/mirrors/centos/$releasever/contrib/$basearch/
 gpgcheck=1
 enabled=0
 
