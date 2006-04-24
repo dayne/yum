@@ -36,7 +36,7 @@ name=CentOS-$releasever - Plus
 #baseurl=http://modzer0.cs.uaf.edu/public/centos/$releasever/centosplus/$basearch/
 baseurl=http://dds.gina.alaska.edu/public/mirrors/centos/$releasever/centosplus/$basearch/
 gpgcheck=1
-enabled=1
+enabled=0
 
 #contribs - packages by Centos Users
 [contribs]
