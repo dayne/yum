@@ -30,13 +30,14 @@ baseurl=http://dds.gina.alaska.edu/public/mirrors/centos/$releasever/extras/$bas
 gpgcheck=1
 
 #additional packages that extend functionality of existing packages
+#this is where you can find unsupported kernel (xfs, reiser)
 [centosplus]
 name=CentOS-$releasever - Plus
 #baseurl=http://mirror.centos.org/centos/$releasever/centosplus/$basearch/
 #baseurl=http://modzer0.cs.uaf.edu/public/centos/$releasever/centosplus/$basearch/
 baseurl=http://dds.gina.alaska.edu/public/mirrors/centos/$releasever/centosplus/$basearch/
 gpgcheck=1
-enabled=0
+enabled=1
 
 #contribs - packages by Centos Users
 [contribs]
