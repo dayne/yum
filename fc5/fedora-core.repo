@@ -1,0 +1,24 @@
+[core]
+name=Fedora Core $releasever - $basearch
+#baseurl=http://download.fedora.redhat.com/pub/fedora/linux/core/$releasever/$basearch/os/
+baseurl=http://dds.gina.alaska.edu/public/mirrors/fedora/$releasever/$basearch/os/
+#mirrorlist=http://fedora.redhat.com/download/mirrors/fedora-core-$releasever
+enabled=1
+gpgcheck=1
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-fedora file:///etc/pki/rpm-gpg/RPM-GPG-KEY
+
+[core-debuginfo]
+name=Fedora Core $releasever - $basearch - Debug
+#baseurl=http://download.fedora.redhat.com/pub/fedora/linux/core/$releasever/$basearch/debug/
+baseurl=http://dds.gina.alaska.edu/public/mirrors/fedora/$releasever/$basearch/debug/
+enabled=0
+gpgcheck=1
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-fedora file:///etc/pki/rpm-gpg/RPM-GPG-KEY
+
+[core-source]
+name=Fedora Core $releasever - Source
+#baseurl=http://download.fedora.redhat.com/pub/fedora/linux/core/$releasever/source/SRPMS/
+baseurl=http://dds.gina.alaska.edu/public/mirrors/fedora/$releasever/$basearch/SRPMS/
+enabled=0
+gpgcheck=1
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-fedora file:///etc/pki/rpm-gpg/RPM-GPG-KEY
