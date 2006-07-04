@@ -1,4 +1,4 @@
-# for the purpose of installing trak on centos
+# for the purpose of installing trac on centos
 #   yum --enablerepo=dag --enablerepo=pyvault update
 #   http://www.madboa.com/geek/trac-centos/
 [pyvault]
@@ -8,4 +8,6 @@ mirrorlist = http://python.org/pyvault/mirrors-centos-4-i386.txt
 gpgkey=http://python.org/pyvault/pyvault.asc
 gpgcheck=1
 enabled=0
-includepkgs = python23-docutils
+# what is needed for trac
+# from pyvault # includepkgs = python23-docutils
+# from dag     # includepkgs=clearsilver python-clearsilver trac
