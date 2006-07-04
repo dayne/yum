@@ -1,0 +1,11 @@
+# for the purpose of installing trak on centos
+#   yum --enablerepo=dag --enablerepo=pyvault update
+#   http://www.madboa.com/geek/trac-centos/
+[pyvault]
+name = PyVault RPM Repository Red Hat Enterprise Linux 4
+baseurl = http://python.org/pyvault/centos-4-i386
+mirrorlist = http://python.org/pyvault/mirrors-centos-4-i386.txt
+gpgkey=http://python.org/pyvault/pyvault.asc
+gpgcheck=1
+enabled=0
+includepkgs = python23-docutils
