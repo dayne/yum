@@ -8,6 +8,7 @@ mirrorlist = http://python.org/pyvault/mirrors-centos-4-i386.txt
 gpgkey=http://python.org/pyvault/pyvault.asc
 gpgcheck=1
 enabled=0
+protect=0
 # what is needed for trac
 # from pyvault # includepkgs = python23-docutils
 # from dag     # includepkgs=clearsilver python-clearsilver trac

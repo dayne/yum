@@ -27,7 +27,7 @@ cp -r . /etc/yum.repos.d
 echo "Now go to /etc/yum.repos.d and import any GPG keys you need"
 echo "See the comments in each repo for the import command/url to GPG key"
 
-WAIT=10
+WAIT=5
 echo 
 echo "***READ: Going to import GPG keys you probably need in $WAIT seconds"
 echo "***READ: hit CTL-C if you don't want this to happen"
@@ -50,8 +50,12 @@ for KEYFILE in *.repo.key; do
 	done
 done
 
+echo "installing yum-plugin-protectbase"
+yum install yum-plugin-protectbase
+
 echo 
 echo "you can stay in sync w/ bishop's yum.repos.d by going to"
 echo "/etc/yum.repos.d and typing: svn update"
 echo
 echo "Enjoy! .bishop"
+

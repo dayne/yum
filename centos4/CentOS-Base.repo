@@ -4,6 +4,7 @@ name=CentOS-$releasever - Base
 #baseurl=http://modzer0.cs.uaf.edu/public/centos/$releasever/os/$basearch/
 baseurl=http://dds.gina.alaska.edu/public/mirrors/centos/$releasever/os/$basearch/
 gpgcheck=1
+protect=1
 
 #released updates 
 [update]
@@ -12,6 +13,7 @@ name=CentOS-$releasever - Updates
 #baseurl=http://modzer0.cs.uaf.edu/public/centos/$releasever/updates/$basearch/
 baseurl=http://dds.gina.alaska.edu/public/mirrors/centos/$releasever/updates/$basearch/
 gpgcheck=1
+protect=1
 
 #packages used/produced in the build but not released
 [addons]
@@ -20,6 +22,7 @@ name=CentOS-$releasever - Addons
 #baseurl=http://modzer0.cs.uaf.edu/public/centos/$releasever/addons/$basearch/
 baseurl=http://dds.gina.alaska.edu/public/mirrors/centos/$releasever/addons/$basearch/
 gpgcheck=1
+protect=0
 
 #additional packages that may be useful
 [extras]
@@ -28,6 +31,7 @@ name=CentOS-$releasever - Extras
 #baseurl=http://modzer0.cs.uaf.edu/public/centos/$releasever/extras/$basearch/
 baseurl=http://dds.gina.alaska.edu/public/mirrors/centos/$releasever/extras/$basearch/
 gpgcheck=1
+protect=0
 
 #additional packages that extend functionality of existing packages
 #this is where you can find unsupported kernel (xfs, reiser)
@@ -38,6 +42,7 @@ name=CentOS-$releasever - Plus
 baseurl=http://dds.gina.alaska.edu/public/mirrors/centos/$releasever/centosplus/$basearch/
 gpgcheck=1
 enabled=1
+protect=0
 
 #contribs - packages by Centos Users
 [contribs]
@@ -47,6 +52,7 @@ name=CentOS-$releasever - Contribs
 baseurl=http://dds.gina.alaska.edu/public/mirrors/centos/$releasever/contrib/$basearch/
 gpgcheck=1
 enabled=0
+protect=0
 
 #packages in testing
 [testing]
@@ -56,3 +62,4 @@ name=CentOS-$releasever - Testing
 baseurl=http://dds.gina.alaska.edu/public/mirrors/centos/$releasever/testing/$basearch/
 gpgcheck=1
 enabled=0
+protect=0

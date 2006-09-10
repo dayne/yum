@@ -4,3 +4,4 @@ gpgcheck=1
 gpgkey=http://centos.karan.org/RPM-GPG-KEY-karan.org.txt
 enabled=0
 baseurl=http://centos.karan.org/el$releasever/extras/stable/$basearch/RPMS/
+protect=0
