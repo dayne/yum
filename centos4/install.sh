@@ -51,7 +51,7 @@ for KEYFILE in *.repo.key; do
 done
 
 echo "installing yum-plugin-protectbase"
-yum install yum-plugin-protectbase
+yum install -y yum-plugin-protectbase bash-completion
 
 echo 
 echo "you can stay in sync w/ bishop's yum.repos.d by going to"
