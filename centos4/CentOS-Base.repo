@@ -1,7 +1,6 @@
 [base]
 name=CentOS-$releasever - Base
 #baseurl=http://mirror.centos.org/centos/$releasever/os/$basearch/
-#baseurl=http://modzer0.cs.uaf.edu/public/centos/$releasever/os/$basearch/
 baseurl=http://dds.gina.alaska.edu/public/mirrors/centos/$releasever/os/$basearch/
 gpgcheck=1
 protect=1
@@ -10,7 +9,6 @@ protect=1
 [update]
 name=CentOS-$releasever - Updates
 #baseurl=http://mirror.centos.org/centos/$releasever/updates/$basearch/
-#baseurl=http://modzer0.cs.uaf.edu/public/centos/$releasever/updates/$basearch/
 baseurl=http://dds.gina.alaska.edu/public/mirrors/centos/$releasever/updates/$basearch/
 gpgcheck=1
 protect=1
@@ -19,7 +17,6 @@ protect=1
 [addons]
 name=CentOS-$releasever - Addons
 #baseurl=http://mirror.centos.org/centos/$releasever/addons/$basearch/
-#baseurl=http://modzer0.cs.uaf.edu/public/centos/$releasever/addons/$basearch/
 baseurl=http://dds.gina.alaska.edu/public/mirrors/centos/$releasever/addons/$basearch/
 gpgcheck=1
 protect=0
@@ -28,7 +25,6 @@ protect=0
 [extras]
 name=CentOS-$releasever - Extras
 #baseurl=http://mirror.centos.org/centos/$releasever/extras/$basearch/
-#baseurl=http://modzer0.cs.uaf.edu/public/centos/$releasever/extras/$basearch/
 baseurl=http://dds.gina.alaska.edu/public/mirrors/centos/$releasever/extras/$basearch/
 gpgcheck=1
 protect=0
@@ -38,7 +34,6 @@ protect=0
 [centosplus]
 name=CentOS-$releasever - Plus
 #baseurl=http://mirror.centos.org/centos/$releasever/centosplus/$basearch/
-#baseurl=http://modzer0.cs.uaf.edu/public/centos/$releasever/centosplus/$basearch/
 baseurl=http://dds.gina.alaska.edu/public/mirrors/centos/$releasever/centosplus/$basearch/
 gpgcheck=1
 enabled=1
@@ -48,7 +43,6 @@ protect=0
 [contribs]
 name=CentOS-$releasever - Contribs
 #baseurl=http://mirror.centos.org/centos/$releasever/contrib/$basearch/
-#baseurl=http://modzer0.cs.uaf.edu/public/centos/$releasever/contrib/$basearch/
 baseurl=http://dds.gina.alaska.edu/public/mirrors/centos/$releasever/contrib/$basearch/
 gpgcheck=1
 enabled=0
@@ -58,8 +52,8 @@ protect=0
 [testing]
 name=CentOS-$releasever - Testing
 #baseurl=http://mirror.centos.org/centos/$releasever/testing/$basearch/
-#baseurl=http://modzer0.cs.uaf.edu/public/centos/$releasever/testing/$basearch/
-baseurl=http://dds.gina.alaska.edu/public/mirrors/centos/$releasever/testing/$basearch/
+#baseurl=http://dds.gina.alaska.edu/public/mirrors/centos/$releasever/testing/$basearch/
+baseurl=http://dev.centos.org/centos/$releasever/testing/$basearch/
 gpgcheck=1
 enabled=0
 protect=0
