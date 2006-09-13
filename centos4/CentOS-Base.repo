@@ -48,12 +48,12 @@ gpgcheck=1
 enabled=0
 protect=0
 
-#packages in testing
-[testing]
-name=CentOS-$releasever - Testing
-#baseurl=http://mirror.centos.org/centos/$releasever/testing/$basearch/
-#baseurl=http://dds.gina.alaska.edu/public/mirrors/centos/$releasever/testing/$basearch/
-baseurl=http://dev.centos.org/centos/$releasever/testing/$basearch/
-gpgcheck=1
-enabled=0
-protect=0
+##packages in testing
+#[testing]
+#name=CentOS-$releasever - Testing
+##baseurl=http://mirror.centos.org/centos/$releasever/testing/$basearch/
+##baseurl=http://dds.gina.alaska.edu/public/mirrors/centos/$releasever/testing/$basearch/
+#baseurl=http://dev.centos.org/centos/$releasever/testing/$basearch/
+#gpgcheck=1
+#enabled=0
+#protect=0
