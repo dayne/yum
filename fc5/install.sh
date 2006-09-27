@@ -27,6 +27,15 @@ cp -r . /etc/yum.repos.d
 echo "not importing any keys since fc4 seems to have a better way"
 echo "of dealing with it"
 sleep 1
+#for KEYFILE in *.repo.key; do
+# echo "Inserting key from $KEYFILE"
+# for KEYURL in `cat $KEYFILE`; do
+#   echo "rpm --import $KEYURL"
+#   rpm --import $KEYURL
+#   sleep 1
+# done
+#done
+
 
 echo "installing the handy bash-completion"
 yum install -y bash-completion
