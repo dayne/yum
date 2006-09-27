@@ -4,4 +4,4 @@ name=RPMForge: Freshrpms
 mirrorlist=http://ayo.freshrpms.net/fedora/linux/$releasever/mirrors-freshrpms
 gpgkey=file:///etc/yum.repos.d/freshrpms.repo.key
 gpgcheck=1
-enabled=0
+enabled=1
