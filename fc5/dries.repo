@@ -1,0 +1,6 @@
+[dries]
+name=RPMForge: Dries
+mirrorlist=http://apt.sw.be/dries/fedora/fc$releasever/mirrors-rpmforge
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY.dries.txt
+gpgcheck=1
+enabled=0

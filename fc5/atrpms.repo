@@ -1,0 +1,21 @@
+[atrpms]
+name=ATrpms - Stable
+baseurl=http://dl.atrpms.net/fc$releasever-$basearch/atrpms/stable
+gpgcheck=1
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY.atrpms
+enabled=0
+
+[atrpms-testing]
+name=ATrpms - Testing
+baseurl=http://dl.atrpms.net/fc$releasever-$basearch/atrpms/testing
+gpgcheck=1
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY.atrpms
+enabled=0
+
+# Warning: Don't enable this "bleeding" repo if you want stable software!
+[atrpms-bleeding]
+name=ATrpms - Bleeding
+baseurl=http://dl.atrpms.net/fc$releasever-$basearch/atrpms/bleeding
+gpgcheck=1
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY.atrpms
+enabled=0
