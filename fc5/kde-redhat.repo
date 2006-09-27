@@ -3,14 +3,14 @@
 name=KDE-Redhat: Fedora-Specific
 mirrorlist=http://apt.kde-redhat.org/apt/kde-redhat/fedora/$releasever/$basearch/stable/mirrors
 gpgcheck=1
-gpgkey=file:///etc/pki/rpm-gpg/kde-redhat.RPM-GPG-KEY
+gpgkey=file:///etc/yum.repos.d/kde-redhat.repo.key
 enabled=0
 
 [kde-redhat-all]
 name=KDE-Redhat: General Packages
 mirrorlist=http://apt.kde-redhat.org/apt/kde-redhat/all/stable/mirrors
 gpgcheck=1
-gpgkey=file:///etc/pki/rpm-gpg/kde-redhat.RPM-GPG-KEY
+gpgkey=file:///etc/yum.repos.d/kde-redhat.repo.key
 enabled=0
 
 # NOTE: enable/disable *both* testing/testing-all together; requires/depends-on stable
@@ -18,7 +18,7 @@ enabled=0
 name=KDE-Redhat Testing: Fedora-Specific
 mirrorlist=http://apt.kde-redhat.org/apt/kde-redhat/fedora/$releasever/$basearch/testing/mirrors
 gpgcheck=1
-gpgkey=file://http://apt.kde-redhat.org/apt/kde-redhat/kde-redhat.RPM-GPG-KEY
+gpgkey=file:///etc/yum.repos.d/kde-redhat.repo.key
 enabled=0
 
 [kde-redhat-testing-all]
@@ -33,13 +33,13 @@ enabled=0
 name=KDE-Redhat Unstable: Fedora-Specific
 mirrorlist=http://apt.kde-redhat.org/apt/kde-redhat/fedora/$releasever/$basearch/unstable/mirrors
 gpgcheck=1
-gpgkey=file:///etc/pki/rpm-gpg/kde-redhat.RPM-GPG-KEY
+gpgkey=file:///etc/yum.repos.d/kde-redhat.repo.key
 enabled=0
 
 [kde-redhat-unstable-all]
 name=KDE-Redhat Unstable: General Packages
 mirrorlist=http://apt.kde-redhat.org/apt/kde-redhat/all/unstable/mirrors
 gpgcheck=1
-gpgkey=file:///etc/pki/rpm-gpg/kde-redhat.RPM-GPG-KEY
+gpgkey=file:///etc/yum.repos.d/kde-redhat.repo.key
 enabled=0
 
