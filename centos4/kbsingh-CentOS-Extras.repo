@@ -3,5 +3,28 @@ name=CentOS.Karan.Org-EL$releasever - Stable
 gpgcheck=1
 gpgkey=http://centos.karan.org/RPM-GPG-KEY-karan.org.txt
 enabled=0
+protect=1
 baseurl=http://centos.karan.org/el$releasever/extras/stable/$basearch/RPMS/
+# Need a ftp mirror ?  uncomment the line below, & disable the one above
+# baseurl=ftp://rpm.karan.org/pub/kbsingh/el$releasever/extras/stable/$basearch/RPMS/
+
+[kbs-CentOS-Misc]
+name=CentOS.Karan.Org-EL$releasever - Stable
+gpgkey=http://centos.karan.org/RPM-GPG-KEY-karan.org.txt
+gpgcheck=1
+enabled=0
 protect=0
+baseurl=http://centos.karan.org/el$releasever/misc/stable/$basearch/RPMS/
+# Need a ftp mirror ? Uncomment the line below and comment the line above
+# baseurl=ftp://rpm.karan.org/pub/kbsingh/el$releasever/misc/stable/$basearch/RPMS/
+
+[kbs-CentOS-Misc-Testing]
+name=CentOS.Karan.Org-EL$releasever - Testing
+gpgkey=http://centos.karan.org/RPM-GPG-KEY-karan.org.txt
+gpgcheck=1
+enabled=0
+protect=0
+baseurl=http://centos.karan.org/el$releasever/misc/testing/i386/RPMS/
+# Ned a ftp mirror ? Uncomment the line below and comment the line above
+# baseurl=ftp://rpm.karan.org/pub/kbsingh/el$releasever/misc/testing/$basearch/RPMS/
+
