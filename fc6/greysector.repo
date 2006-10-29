@@ -1,0 +1,25 @@
+# enable all three for better livna mplayer support
+# not compatible with RPMForge crew.. 
+[greysector]
+name=Grey Sector RPMs for Fedora Core $releasever - $basearch
+baseurl=http://rpm.greysector.net/yum/$releasever/$basearch/
+#mirrorlist=http://rpm.greysector.net/yum/mirrorlist-$releasever
+#gpgkey=http://rpm.greysector.net/greysector-pubkey.txt
+gpgkey=file:///etc/yum.repos.d/greysector.repo.key
+enabled=0
+
+[greysector-all]
+name=Grey Sector RPMs for all Fedora Core releases - $basearch
+baseurl=http://rpm.greysector.net/yum/all/$basearch/
+#mirrorlist=http://rpm.greysector.net/yum/mirrorlist-all
+#gpgkey=http://rpm.greysector.net/greysector-pubkey.txt
+gpgkey=file:///etc/yum.repos.d/greysector.repo.key
+enabled=0
+
+[greysector-all-noarch]
+name=Grey Sector RPMs for all Fedora Core releases
+baseurl=http://rpm.greysector.net/yum/all/noarch/
+#mirrorlist=http://rpm.greysector.net/yum/mirrorlist-all-noarch
+#gpgkey=http://rpm.greysector.net/greysector-pubkey.txt
+gpgkey=file:///etc/yum.repos.d/greysector.repo.key
+enabled=0
