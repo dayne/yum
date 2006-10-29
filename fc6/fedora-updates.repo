@@ -1,0 +1,23 @@
+[updates]
+name=Fedora Core $releasever - $basearch - Updates
+#baseurl=http://download.fedora.redhat.com/pub/fedora/linux/core/updates/$releasever/$basearch/
+mirrorlist=http://mirrors.fedoraproject.org/mirrorlist?repo=updates-released-fc$releasever&arch=$basearch
+enabled=1
+gpgcheck=1
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-fedora
+
+[updates-debuginfo]
+name=Fedora Core $releasever - $basearch - Updates - Debug
+#baseurl=http://download.fedora.redhat.com/pub/fedora/linux/core/updates/$releasever/$basearch/debug/
+mirrorlist=http://mirrors.fedoraproject.org/mirrorlist?repo=updates-released-debug-fc$releasever&arch=$basearch
+enabled=0
+gpgcheck=1
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-fedora
+
+[updates-source]
+name=Fedora Core $releasever - Updates Source
+#baseurl=http://download.fedora.redhat.com/pub/fedora/linux/core/updates/$releasever/SRPMS/
+mirrorlist=http://mirrors.fedoraproject.org/mirrorlist?repo=updates-released-source-fc$releasever&arch=$basearch
+enabled=0
+gpgcheck=1
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-fedora
