@@ -1,0 +1,10 @@
+# yum --enablerepo=flash install flash-plugin
+[flash]
+name=macromedia.mplug.org - Flash Plugin
+baseurl=http://macromedia.mplug.org/rpm
+  http://sluglug.ucsc.edu/macromedia/rpm
+  http://ruslug.rutgers.edu/macromedia/rpm
+  http://macromedia.rediris.es/rpm
+enabled=0
+gpgcheck=1
+gpgkey=file:///etc/yum.repos.d/flash.repo.key

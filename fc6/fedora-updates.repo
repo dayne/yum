@@ -1,8 +1,8 @@
 [updates]
 name=Fedora Core $releasever - $basearch - Updates
 #baseurl=http://download.fedora.redhat.com/pub/fedora/linux/core/updates/$releasever/$basearch/
-#mirrorlist=http://mirrors.fedoraproject.org/mirrorlist?repo=updates-released-fc$releasever&arch=$basearch
-baseurl=http://dds.gina.alaska.edu/public/mirrors/fedora/updates/$releasever/$basearch/
+mirrorlist=http://mirrors.fedoraproject.org/mirrorlist?repo=updates-released-fc$releasever&arch=$basearch
+#baseurl=http://dds.gina.alaska.edu/public/mirrors/fedora/updates/$releasever/$basearch/
 enabled=1
 gpgcheck=1
 gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-fedora
