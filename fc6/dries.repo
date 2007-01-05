@@ -1,0 +1,7 @@
+[dries]
+name=RPMForge: Dries
+#mirrorlist=http://apt.sw.be/dries/fedora/fc$releasever/mirrors-rpmforge
+baseurl=http://ftp.belnet.be/packages/dries.ulyssis.org/fedora/linux/$releasever/$basearch/dries/RPMS/
+gpgkey=file:///etc/yum.repos.d/dries.repo.key
+gpgcheck=1
+enabled=1
