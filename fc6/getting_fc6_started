@@ -1,0 +1,64 @@
+yum -y install mplayer
+yum -y install nautilus-open-terminal
+yum install bittorrent
+
+rpms to install:
+
+mplayer nautilus-open-terminal kernel-devel kernel-headers xmms-mp3 xmms-skins
+
+yum -y install gstreamer-plugins*
+yum -y install lame ffmpeg mjpegtools
+yum --enablerepo=atrpms install w32codec
+gst-register-0.8A
+
+wget -c http://download.videolan.org/pub/libdvdcss/1.2.9/rpm/libdvdcss2-1.2.9-1.i386.rpm
+rpm -i libdvdcss2-1.2.9-1.i386.rpm
+
+yum -y install videolan-client
+yum -y install gdesklets
+
+yum -y install gcc
+yum -y install gcc-c++
+
+yum -y install zlib-devel
+
+wget http://corefonts.sourceforge.net/msttcorefonts-2.0-1.spec
+yum install -y rpm-build cabextract
+rpmbuild -ba msttcorefonts-2.0-1.spec
+rpm -Uvh /usr/src/redhat/RPMS/noarch/msttcorefonts-2.0-1.noarch.rpm
+
+yum -y install fluxbox
+
+yum -y install beryl-gnome
+
+
+http://wiki.beryl-project.org/index.php?title=Install/Fedora_Core
+Section "Module"
+       Load  "dbe"
+       Load  "extmod"
+       Load  "fbdevhw"
+       Load  "glx"
+       Load  "record"
+       Load  "freetype"
+       Load  "type1"
+       Load  "GLCore"
+       Load  "dri"
+EndSection
+
+ Section "Screen"
+       ...
+       Option "AllowGLXWithComposite" "True"
+       Option "RenderAccel" "True"
+       Option "AddARGBGLXVisuals" "True"
+       ...
+ EndSection
+
+ Section "Extensions"
+       Option "Composite" "Enable"
+ EndSection
+
+
+beryl-manager
+gnome-session-properties
+#rm ~/.gconf/apps/gnome-session/rh/%gconf.xml
+
