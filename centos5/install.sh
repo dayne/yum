@@ -43,11 +43,7 @@ sleep 1
 
 for KEYFILE in *.repo.key; do
 	echo "Inserting key from $KEYFILE"
-	for KEYURL in `cat $KEYFILE`; do
-		echo "rpm --import $KEYURL"
-		rpm --import $KEYURL
-		sleep 1
-	done
+	rpm --import $KEYFILE
 done
 
 echo "installing yum-protectbase"
