@@ -13,8 +13,8 @@
 
 [base]
 name=CentOS-$releasever - Base
-mirrorlist=http://mirrorlist.centos.org/?release=$releasever&arch=$basearch&repo=os
-#baseurl=http://dds.gina.alaska.edu/public/mirrors/centos/$releasever/os/$basearch/
+#mirrorlist=http://mirrorlist.centos.org/?release=$releasever&arch=$basearch&repo=os
+baseurl=http://dds.gina.alaska.edu/public/mirrors/centos/$releasever/os/$basearch/
 gpgcheck=1
 gpgkey=http://dds.gina.alaska.edu/public/mirrors/centos/RPM-GPG-KEY-CentOS-5
 enabled=1
@@ -23,8 +23,8 @@ protect=1
 #released updates 
 [updates]
 name=CentOS-$releasever - Updates
-mirrorlist=http://mirrorlist.centos.org/?release=$releasever&arch=$basearch&repo=updates
-#baseurl=http://dds.gina.alaska.edu/public/mirrors/centos/$releasever/updates/$basearch/
+#mirrorlist=http://mirrorlist.centos.org/?release=$releasever&arch=$basearch&repo=updates
+baseurl=http://dds.gina.alaska.edu/public/mirrors/centos/$releasever/updates/$basearch/
 gpgcheck=1
 gpgkey=http://dds.gina.alaska.edu/public/mirrors/centos/RPM-GPG-KEY-CentOS-5
 enabled=1
@@ -33,8 +33,8 @@ protect=1
 #packages used/produced in the build but not released
 [addons]
 name=CentOS-$releasever - Addons
-mirrorlist=http://mirrorlist.centos.org/?release=$releasever&arch=$basearch&repo=addons
-#baseurl=http://dds.gina.alaska.edu/public/mirrors/centos/$releasever/addons/$basearch/
+#mirrorlist=http://mirrorlist.centos.org/?release=$releasever&arch=$basearch&repo=addons
+baseurl=http://dds.gina.alaska.edu/public/mirrors/centos/$releasever/addons/$basearch/
 gpgcheck=1
 #pgkey=http://dds.gina.alaska.edu/public/mirrors/centos/RPM-GPG-KEY-CentOS-5
 enabled=0
@@ -43,8 +43,8 @@ protect=0
 #additional packages that may be useful
 [extras]
 name=CentOS-$releasever - Extras
-mirrorlist=http://mirrorlist.centos.org/?release=$releasever&arch=$basearch&repo=extras
-#baseurl=http://dds.gina.alaska.edu/public/mirrors/centos/$releasever/extras/$basearch/
+#mirrorlist=http://mirrorlist.centos.org/?release=$releasever&arch=$basearch&repo=extras
+baseurl=http://dds.gina.alaska.edu/public/mirrors/centos/$releasever/extras/$basearch/
 gpgcheck=1
 gpgkey=http://dds.gina.alaska.edu/public/mirrors/centos/RPM-GPG-KEY-CentOS-5
 enabled=1
@@ -53,11 +53,11 @@ protect=0
 #additional packages that extend functionality of existing packages
 [centosplus]
 name=CentOS-$releasever - Plus
-mirrorlist=http://mirrorlist.centos.org/?release=$releasever&arch=$basearch&repo=centosplus
-#baseurl=http://dds.gina.alaska.edu/public/mirrors/centos/$releasever/centosplus/$basearch/
+#mirrorlist=http://mirrorlist.centos.org/?release=$releasever&arch=$basearch&repo=centosplus
+baseurl=http://dds.gina.alaska.edu/public/mirrors/centos/$releasever/centosplus/$basearch/
 gpgcheck=1
 gpgkey=http://dds.gina.alaska.edu/public/mirrors/centos/RPM-GPG-KEY-CentOS-5
-enabled=0
+enabled=1
 protect=0
 
 #contrib - packages by Centos Users
