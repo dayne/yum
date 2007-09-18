@@ -3,8 +3,9 @@
 [rpmforge]
 name = Red Hat Enterprise $releasever - RPMforge.net - dag
 #baseurl = http://apt.sw.be/redhat/el5/en/$basearch/dag
-mirrorlist = http://apt.sw.be/redhat/el5/en/mirrors-rpmforge
+#mirrorlist = http://apt.sw.be/redhat/el5/en/mirrors-rpmforge
 #mirrorlist = file:///etc/yum.repos.d/mirrors-rpmforge
+baseurl = http://dds.gina.alaska.edu/public/mirrors/dag/el5/en/$basearch/dag/
 enabled = 1
 protect = 0
 gpgkey = file:///etc/pki/rpm-gpg/RPM-GPG-KEY-rpmforge-dag
