@@ -14,6 +14,6 @@ baseurl=http://centos.karan.org/el$releasever/extras/stable/$basearch/RPMS/
 name=CentOS.Karan.Org-EL$releasever - Testing
 gpgcheck=1
 gpgkey=http://centos.karan.org/RPM-GPG-KEY-karan.org.txt
-enabled=1
+enabled=0
 protect=0
 baseurl=http://centos.karan.org/el$releasever/extras/testing/$basearch/RPMS/
