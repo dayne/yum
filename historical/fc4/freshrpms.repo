@@ -1,0 +1,6 @@
+[freshrpms]
+name=Fedora Linux $releasever - $basearch - freshrpms
+baseurl=http://ayo.freshrpms.net/fedora/linux/$releasever/$basearch/freshrpms
+enabled=1
+gpgcheck=1
+gpgkey=file:///etc/yum.repos.d/freshrpms.repo.key

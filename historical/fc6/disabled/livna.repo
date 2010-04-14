@@ -1,0 +1,50 @@
+#  ##########################################################################  #
+#  ##########################################################################  #
+#  ###                                                                    ###  #
+#  ###   LIVNA IS NOT COMPATABLE WITH RPMFORGE (fresh/dag/dries/planet)   ###  #
+#  ###                                                                    ###  #
+#  ##########################################################################  #
+#  ##########################################################################  #
+
+[livna]
+name=Livna for Fedora Core $releasever - $basearch - Base
+baseurl=
+	http://rpm.livna.org/fedora/$releasever/$basearch/
+	http://livna.cat.pdx.edu/fedora/$releasever/$basearch/
+	http://wftp.tu-chemnitz.de/pub/linux/livna/fedora/$releasever/$basearch/
+	http://ftp-stud.fht-esslingen.de/pub/Mirrors/rpm.livna.org/fedora/$releasever/$basearch/
+	http://mirror.atrpms.net/livna/fedora/$releasever/$basearch/
+	ftp://mirrors.tummy.com/pub/rpm.livna.org/fedora/$releasever/$basearch/
+failovermethod=priority
+#mirrorlist=http://rpm.livna.org/mirrorlist-6
+enabled=1
+gpgcheck=1
+gpgkey=file:///etc/yum.repos.d/livna.repo.key
+
+[livna-debuginfo]
+name=Livna for Fedora Core $releasever - $basearch - Debug
+baseurl=
+	http://rpm.livna.org/fedora/$releasever/$basearch/debug/
+	http://livna.cat.pdx.edu/fedora/$releasever/$basearch/debug/
+	http://wftp.tu-chemnitz.de/pub/linux/livna/fedora/$releasever/$basearch/debug/
+	http://ftp-stud.fht-esslingen.de/pub/Mirrors/rpm.livna.org/fedora/$releasever/$basearch/debug/
+	http://mirror.atrpms.net/livna/fedora/$releasever/$basearch/debug/
+	ftp://mirrors.tummy.com/pub/rpm.livna.org/fedora/$releasever/$basearch/debug/
+failovermethod=priority
+enabled=0
+gpgkey=file:///etc/yum.repos.d/livna.repo.key
+gpgcheck=1
+
+[livna-source]
+name=Livna for Fedora Core $releasever - $basearch - Source
+baseurl=
+	http://rpm.livna.org/fedora/$releasever/SRPMS/
+	http://livna.cat.pdx.edu/fedora/$releasever/SRPMS/
+	http://wftp.tu-chemnitz.de/pub/linux/livna/fedora/$releasever/SRPMS/
+	http://ftp-stud.fht-esslingen.de/pub/Mirrors/rpm.livna.org/fedora/$releasever/SRPMS/
+	http://mirror.atrpms.net/livna/fedora/$releasever/SRPMS/
+	ftp://mirrors.tummy.com/pub/rpm.livna.org/fedora/$releasever/SRPMS/
+failovermethod=priority
+enabled=0
+gpgkey=file:///etc/yum.repos.d/livna.repo.key
+gpgcheck=1

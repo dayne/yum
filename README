@@ -1,0 +1,10 @@
+My yum.repos.d directories for CentOS.
+
+Goals here:
+  * direct my CentOS servers/workstations at my own mirrors
+  * include 3rd party repos (RPMForge crew mostly)
+  * enabled/disable my own approved parts of the sources
+  * install a few packages I feel are required
+
+Installing the repo:
+  * git clone

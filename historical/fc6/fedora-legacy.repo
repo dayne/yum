@@ -1,0 +1,13 @@
+[legacy-updates]
+name=Fedora Legacy $releasever - $basearch - Updates
+mirrorlist=http://mirrors.fedoraproject.org/mirrorlist?repo=legacy-updates-$releasever&arch=$basearch
+enabled=0
+gpgcheck=1
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-legacy
+
+[legacy-testing]
+name=Fedora Legacy $releasever - $basearch - Updates Testing
+mirrorlist=http://mirrors.fedoraproject.org/mirrorlist?repo=legacy-updates-testing-$releasever&arch=$basearch
+enabled=0
+gpgcheck=1
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-legacy

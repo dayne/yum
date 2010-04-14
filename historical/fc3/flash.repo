@@ -1,0 +1,8 @@
+[macromedia.mplug.org]
+name=macromedia.mplug.org - Flash Plugin
+baseurl=http://macromedia.mplug.org/apt/fedora/$releasever
+  http://sluglug.ucsc.edu/macromedia/apt/fedora/$releasever
+  http://ruslug.rutgers.edu/macromedia/apt/fedora/$releasever
+  http://macromedia.rediris.es/apt/fedora/$releasever
+enabled=1
+gpgcheck=0

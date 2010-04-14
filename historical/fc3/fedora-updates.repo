@@ -1,0 +1,8 @@
+# rpm --import http://download.fedora.redhat.com/pub/fedora/linux/core/3/i386/os/RPM-GPG-KEY-fedora
+[updates-released]
+name=Fedora Core $releasever - $basearch - Released Updates
+#baseurl=http://download.fedora.redhat.com/pub/fedora/linux/core/updates/$releasever/$basearch/
+baseurl=http://modzer0.cs.uaf.edu/public/fedora/core/updates/$releasever/$basearch/
+#mirrorlist=http://fedora.redhat.com/download/mirrors/updates-released-fc$releasever
+enabled=1
+gpgcheck=1

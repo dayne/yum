@@ -1,0 +1,70 @@
+[main]
+cachedir=/var/cache/yum
+debuglevel=2
+logfile=/var/log/yum.log
+pkgpolicy=newest
+distroverpkg=fedora-release
+tolerant=1
+exactarch=1
+retries=20
+
+#rpm --import http://dag.wieers.com/packages/RPM-GPG-KEY.dag.txt
+#rpm --import http://freshrpms.net/packages/RPM-GPG-KEY.txt
+#rpm --import http://rpm.livna.org/RPM-LIVNA-GPG-KEY
+
+[base]
+name=Fedora Core $releasever - $basearch - Base
+baseurl=http://modzer0.cs.uaf.edu/public/fedora/core/$releasever/$basearch/os/
+#baseurl=http://download.fedora.redhat.com/pub/fedora/linux/core/$releasever/$basearch/os/
+ 
+[updates-released]
+name=Fedora Core $releasever - $basearch - Released Updates
+baseurl=http://modzer0.cs.uaf.edu/public/fedora/core/updates/$releasever/$basearch/
+#baseurl=http://download.fedora.redhat.com/pub/fedora/linux/core/updates/$releasever/$basearch/
+
+#[updates-testing]
+#name=Fedora Core $releasever - $basearch - Unreleased Updates
+#baseurl=http://download.fedora.redhat.com/pub/fedora/linux/core/updates/testing/$releasever/$basearch/
+ 
+[core]
+name=Fedora Linux $releasever - $basearch - core
+baseurl=http://ayo.freshrpms.net/fedora/linux/$releasever/$basearch/core
+ 
+#[extras]
+#name=Fedora Linux $releasever - $basearch - extras
+#baseurl=http://ayo.freshrpms.net/fedora/linux/$releasever/$basearch/extras
+ 
+#[alternatives]
+#name=Fedora Linux $releasever - $basearch - alternatives
+#baseurl=http://ayo.freshrpms.net/fedora/linux/$releasever/$basearch/alternatives
+
+[ayo-updates]
+name=Fedora Linux $releasever - $basearch - updates
+baseurl=http://ayo.freshrpms.net/fedora/linux/$releasever/$basearch/updates
+#gpgcheck=1
+ 
+[freshrpms]
+name=Fedora Linux $releasever - $basearch - freshrpms
+baseurl=http://ayo.freshrpms.net/fedora/linux/$releasever/$basearch/freshrpms
+gpgcheck=1
+ 
+[livna-stable]
+name=Livna.org Fedora Compatible Packages (stable)
+#baseurl= http://rpm.livna.org/fedora/$releasever/$basearch/yum/stable
+baseurl= http://modzer0.cs.uaf.edu/public/fedora/livna/$releasever/$basearch/yum/stable
+gpgcheck=1
+
+#[at-stable]
+#name=ATrpms for Fedora Core $releasever stable
+#baseurl=http://apt.physik.fu-berlin.de/fedora/$releasever/en/$basearch/at-stable
+#gpgcheck=1
+
+[newrpms.sunsite.dk]
+name=Fedora Core 2 NewRPMS.sunsite.dk
+baseurl=http://newrpms.sunsite.dk/apt/redhat/en/i386/fc2
+#gpgcheck=1
+
+[dag] 
+name=Dag RPM Repository for Fedora Core 
+baseurl=http://modzer0.cs.uaf.edu/public/fedora/dag/$releasever/en/$basearch/dag
+	http://apt.sw.be/fedora/$releasever/en/$basearch/dag
