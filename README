@@ -15,3 +15,12 @@ Installing the repo:
   * install the yum.repos.d
     > ./install.sh
 
+Maintaining this:
+  > cd /etc/yum.repos.d
+  > svn up     # re-syncronize 
+  > svn status # see what files you've modified locally
+
+Notes about doing this:
+  * does not remove/destroy your default files
+    backed up as: /etc/yum.conf.default and /etc/yum.repos.default
+  * uses the yum-protectbase plugin for additional safety
