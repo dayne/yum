@@ -1,8 +1,0 @@
-[flash]
-name=macromedia.mplug.org - Flash Plugin
-baseurl=http://macromedia.mplug.org/rpm
-  http://macromedia.rediris.es/rpm
-failovermethod=priority
-enabled=1
-gpgcheck=1
-gpgkey=http://macromedia.mplug.org/FEDORA-GPG-KEY

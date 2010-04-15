@@ -1,8 +1,0 @@
-[dag]
-name=RPMForge: Dag
-baseurl=http://apt.sw.be/fedora/$releasever/en/$basearch/dag
-  http://rh-mirror.linux.iastate.edu/pub/dag/fedora/$releasever/en/$basearch/dag
-  http://ftp.heanet.ie/pub/freshrpms/pub/dag/fedora/$releasever/en/$basearch/dag
-gpgcheck=1
-gpgkey=file:///etc/yum.repos.d/dag.repo.key
-enabled=0

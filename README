@@ -1,4 +1,4 @@
-My yum.repos.d directories for CentOS.
+yum.repos.d directories for CentOS (and perhaps others)
 
 Goals here:
   * direct my CentOS servers/workstations at my own mirrors
@@ -7,4 +7,11 @@ Goals here:
   * install a few packages I feel are required
 
 Installing the repo:
-  * git clone
+  * pick a pull method:
+    > git clone http://github.com/dayne/yum.git
+    > svn co http://svn.github.com/dayne/yum
+  * go to the appropriate distro version (RHEL5 example:)
+    > cd yum/centos5
+  * install the yum.repos.d
+    > ./install.sh
+
