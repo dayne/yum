@@ -19,6 +19,7 @@ gpgcheck=1
 gpgkey=http://dds.gina.alaska.edu/public/mirrors/centos/RPM-GPG-KEY-CentOS-5
 enabled=1
 protect=1
+exclude=postgresql*
 
 #released updates 
 [updates]
@@ -29,6 +30,7 @@ gpgcheck=1
 gpgkey=http://dds.gina.alaska.edu/public/mirrors/centos/RPM-GPG-KEY-CentOS-5
 enabled=1
 protect=1
+exclude=postgresql*
 
 #packages used/produced in the build but not released
 [addons]
@@ -37,7 +39,7 @@ name=CentOS-$releasever - Addons
 baseurl=http://dds.gina.alaska.edu/public/mirrors/centos/$releasever/addons/$basearch/
 gpgcheck=1
 #pgkey=http://dds.gina.alaska.edu/public/mirrors/centos/RPM-GPG-KEY-CentOS-5
-enabled=0
+enabled=1
 protect=0
 
 #additional packages that may be useful

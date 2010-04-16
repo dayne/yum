@@ -1,0 +1,3 @@
+installing postgresql (latest stable) on a clean box is as simple as:
+  yum install postgresql postgresql-devel postgresql-server \
+              postgis postgresql-contrib

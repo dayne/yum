@@ -7,8 +7,7 @@ Goals here:
   * install a few packages I feel are required
 
 Installing the repo:
-  * pick a pull method:
-    > git clone http://github.com/dayne/yum.git
+  * pull down the repository
     > svn co http://svn.github.com/dayne/yum
   * go to the appropriate distro version (RHEL5 example:)
     > cd yum/centos5
