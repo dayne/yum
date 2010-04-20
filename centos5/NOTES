@@ -4,4 +4,5 @@ installing postgresql (latest stable) on a clean box is as simple as:
 
 installing chef  (untested currently)
   edit chef-elff.repo and enable the first repo (possibly protect it)
-  > yum install chef
+  > yum install chef-server
+  http://wiki.opscode.com/display/chef/Installation+on+RHEL+and+CentOS+5+with+RPMs
