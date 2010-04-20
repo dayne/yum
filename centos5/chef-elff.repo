@@ -1,0 +1,50 @@
+# The CentOS/RHEL repo for chef
+# needs to use the epel rubygems
+[chef-elff]
+name=Enterprise Linux Fast Forward 5 - $basearch
+baseurl=http://download.elff.bravenet.com/5/$basearch
+enabled=0 # enable for chef
+gpgcheck=1
+gpgkey=file:///etc/yum.repos.d/chef-elff.repo.key
+protect=1
+
+[chef-elff-debuginfo]
+name=Enterprise Linux Fast Forward 5 - $basearch - Debug
+baseurl=http://download.elff.bravenet.com/5/$basearch/debug
+enabled=0
+gpgkey=file:///etc/yum.repos.d/chef-elff.repo.key
+gpgcheck=1
+protect=0
+
+[chef-elff-source]
+name=Enterprise Linux Fast Forward 5 - $basearch - Source
+baseurl=http://download.elff.bravenet.com/5/SRPMS
+enabled=0
+gpgkey=file:///etc/yum.repos.d/chef-elff.repo.key
+gpgcheck=1
+protect=0
+
+###############################################################
+[chef-elff-testing]
+name=Enterprise Linux Fast Forward 5 - Testing - $basearch
+baseurl=http://download.elff.bravenet.com/testing/5/$basearch
+enabled=0
+gpgcheck=1
+gpgkey=file:///etc/yum.repos.d/chef-elff.repo.key
+protect=0
+
+[chef-elff-testing-debuginfo]
+name=Enterprise Linux Fast Forward 5 - Testing - $basearch - Debug
+baseurl=http://download.elff.bravenet.com/testing/5/$basearch/debug
+enabled=0
+gpgkey=file:///etc/yum.repos.d/chef-elff.repo.key
+gpgcheck=1
+protect=0
+
+[chef-elff-testing-source]
+name=Enterprise Linux Fast Forward 5 - Testing - $basearch - Source
+baseurl=http://download.elff.bravenet.com/testing/5/SRPMS
+enabled=0
+gpgkey=file:///etc/yum.repos.d/chef-elff.repo.key
+gpgcheck=1
+protect=0
