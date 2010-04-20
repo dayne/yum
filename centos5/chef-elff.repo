@@ -3,7 +3,8 @@
 [chef-elff]
 name=Enterprise Linux Fast Forward 5 - $basearch
 baseurl=http://download.elff.bravenet.com/5/$basearch
-enabled=0 # enable for chef
+# enable for chef
+enabled=0 
 gpgcheck=1
 gpgkey=file:///etc/yum.repos.d/chef-elff.repo.key
 protect=1

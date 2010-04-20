@@ -10,3 +10,4 @@ enabled = 1
 protect = 0
 gpgkey = file:///etc/pki/rpm-gpg/RPM-GPG-KEY-rpmforge-dag
 gpgcheck = 1
+exclude=nagios*
