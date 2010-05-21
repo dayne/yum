@@ -4,10 +4,13 @@
 
 
 # set the timezone
-# TODO FIXME this does not work yet
 echo "setting timezone to Alaskan start ntpd"
 mv /etc/localtime /etc/localtime-default
 ln -s /usr/share/zoneinfo/America/Anchorage /etc/localtime
+
+echo 'ZONE="America/Anchorage"' > /etc/sysconfig/clock
+echo 'UTC=false' >> /etc/sysconfig/clock
+echo 'ARC=false' >> /etc/sysconfig/clock
 
 #set the time first so weird stuff doesn't happen
 yum -y install ntp
@@ -111,18 +114,6 @@ echo "nameserver 137.229.10.39" >> /etc/resolv.conf
 echo "nameserver 137.229.30.33" >> /etc/resolv.conf
 
 
-echo  "stop unnecessary services"
-chkconfig bluetooth off
-chkconfig cups off
-chkconfig ip6tables off
-chkconfig pcscd off
-chkconfig avahi-daemon off
-sleep 1
-
-# set up hosts
-#wget http://nori.gina.alaska.edu/sysconfig/hosts
-#cat ./hosts >> /etc/hosts
-
 # ------------ Configure NRPE (Nagios Plugin) ------------ #
 echo "setting up NRPE..."
 
@@ -134,10 +125,9 @@ chkconfig nrpe on
 /etc/init.d/xinetd start
 service nrpe start
 
-echo "Completed NRPE setup."
-echo "Add the following rule to iptables and restart the service:"
-echo "# Allow nagios nrpe"
-echo "-A RH-Firewall-1-INPUT -p tcp -m tcp --dport 5666 -j ACCEPT"
+# set up firewall exceptions
+iptables -A INPUT -p tcp --dport 5666 -j ACCEPT
+service iptables restart
 
 echo ""
 
