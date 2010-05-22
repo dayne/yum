@@ -1,8 +1,17 @@
 installing postgresql (latest stable) on a clean box is as simple as:
-  > yum install postgresql postgresql-devel postgresql-server \
+  $ yum install postgresql postgresql-devel postgresql-server \
               postgis postgresql-contrib
+  $ service postgresql initdb
+  $ service postgresql start
+  ### become postgres admin
+  $ su - postgres
+  ### create a database
+  $ createdb db_name
+  ### create a user 
+  $ su - postgres
+  $ createuser -P -U postgres db_username
 
 installing chef  (untested currently)
   edit chef-elff.repo and enable the first repo (possibly protect it)
-  > yum install chef-server
+  $ yum install chef-server
   http://wiki.opscode.com/display/chef/Installation+on+RHEL+and+CentOS+5+with+RPMs

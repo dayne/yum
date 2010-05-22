@@ -1,12 +1,16 @@
+== Dayne's yum stuff
 yum.repos.d directories for CentOS (and perhaps others)
 
-Goals here:
+== Goals here:
   * direct my CentOS servers/workstations at my own mirrors
   * include 3rd party repos (RPMForge crew mostly)
   * enabled/disable my own approved parts of the sources
   * install a few packages I feel are required
 
-Installing the repo:
+== Installing the repo:
+
+bash < <( curl http://github.com/dayne/yum/raw/master/tools/sysconfig.sh )
+
   * pull down the repository
     > svn co http://svn.github.com/dayne/yum
   * go to the appropriate distro version (RHEL5 example:)
@@ -14,12 +18,12 @@ Installing the repo:
   * install the yum.repos.d
     > ./install.sh
 
-Maintaining this:
+== Maintaining this:
   > cd /etc/yum.repos.d
   > svn up     # re-syncronize 
   > svn status # see what files you've modified locally
 
-Notes about doing this:
+== Notes about doing this:
   * does not remove/destroy your default files
     backed up as: /etc/yum.conf.default and /etc/yum.repos.default
   * uses the yum-protectbase plugin for additional safety
