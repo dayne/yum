@@ -62,15 +62,15 @@ service yum-updatesd start
 chkconfig yum-updatesd on
 
 # install Ruby and Gems
- #wget http://ks.gina.alaska.edu/ruby.sh
-# sh ruby.sh /usr/local 1
+wget http://ks.gina.alaska.edu/ruby.sh
+sh ruby.sh /usr/local 1
 
-#wget http://ks.gina.alaska.edu/rubygems-1.3.5.tgz
-#tar zxfv rubygems-1.3.5.tgz
-#cd rubygems-1.3.5
-#ruby setup.rb
+wget http://ks.gina.alaska.edu/rubygems-1.3.5.tgz
+tar zxfv rubygems-1.3.5.tgz
+cd rubygems-1.3.5
+ruby setup.rb
 
-#gem install open4 rails mongrel cheat facets net-ssh net-ping crypt-fog daemons net-sftp highline GeoRuby xmpp4r-simple RingyDingy vim-ruby hpricot postgres-pr
+gem install open4 rails mongrel cheat facets net-ssh net-ping crypt-fog daemons net-sftp highline GeoRuby xmpp4r-simple RingyDingy vim-ruby hpricot postgres-pr
 
 yum install -y git
 
