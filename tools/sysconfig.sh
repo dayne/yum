@@ -25,7 +25,7 @@ function yum_install_rpm() {
 	rpm -q $1 
 	if [ $? -eq 1 ]; then
 		echo "missing RPM $1 - installing"
-		yum install -y $q
+		yum install -y $1
 	fi
 }
 
