@@ -1,0 +1,20 @@
+[aegisco]
+name=AegisCo el5 repo - $basearch
+baseurl=http://rpm.aegisco.com/aegisco/el5/$basearch
+enabled=0
+gpgcheck=1
+gpgkey=http://rpm.aegisco.com/aegisco/RPM-GPG-KEY-aegisco
+
+[aegisco-debuginfo]
+name=AegisCo el5 repo - $basearch - Debug
+baseurl=http://rpm.aegisco.com/aegisco/el5/$basearch/debug
+enabled=0
+gpgcheck=1
+gpgkey=http://rpm.aegisco.com/aegisco/RPM-GPG-KEY-aegisco
+
+[aegisco-source]
+name=AegisCo el5 repo - $basearch - Source
+baseurl=http://rpm.aegisco.com/aegisco/el5/SRPMS
+enabled=0
+gpgcheck=1
+gpgkey=http://rpm.aegisco.com/aegisco/RPM-GPG-KEY-aegisco
