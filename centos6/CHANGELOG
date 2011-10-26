@@ -1,0 +1,3 @@
+2010.04.16: 
+  adding pgsqlrpm sources for latest stable postgres meaning core is excluded
+  twiddled excludes to make sure newer version of geos comes in from rpmforge

@@ -1,0 +1,29 @@
+[epel]
+name=Extra Packages for Enterprise Linux 6 - $basearch
+#baseurl=http://download.fedoraproject.org/pub/epel/6/$basearch
+mirrorlist=http://mirrors.fedoraproject.org/mirrorlist?repo=epel-6&arch=$basearch
+failovermethod=priority
+enabled=0
+protect=0
+gpgcheck=1
+gpgkey=file:///etc/yum.repos.d/epel.repo.key
+
+[epel-debuginfo]
+name=Extra Packages for Enterprise Linux 6 - $basearch - Debug
+#baseurl=http://download.fedoraproject.org/pub/epel/6/$basearch/debug
+mirrorlist=http://mirrors.fedoraproject.org/mirrorlist?repo=epel-debug-6&arch=$basearch
+failovermethod=priority
+enabled=0
+protect=0
+gpgkey=file:///etc/yum.repos.d/epel.repo.key
+gpgcheck=1
+
+[epel-source]
+name=Extra Packages for Enterprise Linux 6 - $basearch - Source
+#baseurl=http://download.fedoraproject.org/pub/epel/6/SRPMS
+mirrorlist=http://mirrors.fedoraproject.org/mirrorlist?repo=epel-source-6&arch=$basearch
+failovermethod=priority
+enabled=0
+protect=0
+gpgkey=file:///etc/yum.repos.d/epel.repo.key
+gpgcheck=1
