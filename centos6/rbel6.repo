@@ -1,0 +1,13 @@
+[rbel6]
+name = RBEL 6 Repo
+baseurl = http://rbel.frameos.org/stable/el6/$basearch
+gpgkey = file:///etc/pki/rpm-gpg/RPM-GPG-KEY-RBEL
+gpgcheck = 1
+enabled = 1
+
+[rbel6-testing]
+name = RBEL 6 Testing Repo
+baseurl = http://rbel.frameos.org/testing/el6/$basearch
+gpgkey = file:///etc/pki/rpm-gpg/RPM-GPG-KEY-RBEL
+gpgcheck = 1
+enabled = 0
