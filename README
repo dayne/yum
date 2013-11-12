@@ -1,6 +1,10 @@
 == Dayne's yum stuff
 yum.repos.d directories for CentOS (and perhaps others)
 
+##########################################################################
+#     I NO LONGER MAINTAIN THIS  --- PROBABLY SHOULD NOT USE THIS        #
+##########################################################################
+
 == Goals here:
   * direct my CentOS servers/workstations at my own mirrors
   * include 3rd party repos (RPMForge crew mostly)
