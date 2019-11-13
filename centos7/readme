@@ -1,0 +1,11 @@
+Copy repo files to /etc/yum.repo.d/
+copy gpg key to /etc/pki/rpm-gpg/
+
+then yum clean all
+done
+
+For refrence and troubleshooting
+
+try echo 7 > /etc/yum/vars/releasever
+
+or look for /etc/yum.conf
