@@ -13,7 +13,7 @@ yum.repos.d directories for CentOS (and perhaps others)
 
 == Installing the repo:
 
-bash < <( curl http://github.com/dayne/yum/raw/master/tools/sysconfig.sh )
+bash < <( curl -L http://github.com/dayne/yum/raw/master/tools/sysconfig.sh )
 
   * pull down the repository
     > svn co http://svn.github.com/dayne/yum
